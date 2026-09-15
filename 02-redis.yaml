@@ -1,4 +1,4 @@
-- name: configuring mongodb server
+- name: configuring redis server
   hosts: redis
   become: yes
   tasks:
