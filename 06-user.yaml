@@ -32,7 +32,7 @@
       src: https://roboshop-artifacts.s3.amazonaws.com/user-v3.zip
       dest: /tmp/user.zip
   - name: unzip user
-    unarchieve:
+    unarchive:
       src: /tmp/user.zip
       dest: /app
       remote_src: yes
