@@ -1,7 +1,7 @@
 - name: configure shipping server
   hosts: shipping
   become: yes
-  task:
+  tasks:
   - name: install maven
     package:
       name: maven
@@ -37,7 +37,7 @@
   - name: install dependencies
     command: mvn clean package
     args:
-    chdir: /app
+      chdir: /app
   - name: move shipping jar
     command: mv target/shipping-1.0.jar shipping.jar
     args:
