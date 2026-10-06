@@ -1,7 +1,7 @@
 name: install nginx
-  hosts: private-key-demo
-  become: yes
-  tasks:
-  - name: install nginx
-    package: nginx
-    state: present
+hosts: private-key-demo
+become: yes
+tasks:
+- name: install nginx
+  package: nginx
+  state: present
